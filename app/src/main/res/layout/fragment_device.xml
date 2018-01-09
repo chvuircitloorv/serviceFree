@@ -1,0 +1,171 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@color/black_effective"
+        android:showDividers="middle"
+        >
+
+        <LinearLayout
+            android:id="@+id/du"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_du"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_du_24dp"
+                />
+
+            <TextView
+                android:id="@+id/state_du"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Подключен"
+                android:textSize="@dimen/big_text_size"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/voltage_du"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="3.9В"
+                android:textSize="@dimen/text_size"
+                />
+
+            <ImageView
+                android:id="@+id/disconnect_du"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_turn_off_24dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ddin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_ddin"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_ddin2_24dp"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:id="@+id/state_ddin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Подключен"
+                android:textSize="@dimen/big_text_size"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/voltage_ddin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="4.0В"
+                android:textSize="@dimen/text_size"
+                />
+
+            <ImageView
+                android:id="@+id/disconnect_ddin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_turn_off_24dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_automate"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_du_24dp"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:id="@+id/state_automate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Подключен"
+                android:textColor="@color/black"
+                android:textSize="@dimen/big_text_size"
+                />
+
+            <TextView
+                android:id="@+id/voltage_automate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="3.8"
+                android:textSize="@dimen/text_size"
+                />
+
+            <ImageView
+                android:id="@+id/disconnect_automate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_turn_off_24dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

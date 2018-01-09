@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="5dp">
+
+            <android.support.v7.widget.Toolbar
+                style="@style/Toolbar"
+                android:id="@+id/toolbar"
+                app:title="@string/about_application"
+                app:titleTextColor="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back_24dp"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                >
+
+                <LinearLayout
+                    style="@style/AboutAppLinearLayout"
+                    android:id="@+id/call"
+                    >
+
+                    <ImageView
+                        style="@style/AboutApplicationImageView"
+                        android:src="@drawable/ic_phone_24dp"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AboutApplicationTextInputLayout"
+                        >
+
+                        <EditText
+                            style="@style/AboutApplicationEditText"
+                            android:hint="@string/phone"
+                            android:text="@string/phone_number"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/AboutAppLinearLayout"
+                    android:id="@+id/web"
+                    >
+
+                    <ImageView
+                        style="@style/AboutApplicationImageView"
+                        android:src="@drawable/ic_web24_dp"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AboutApplicationTextInputLayout"
+                        >
+
+                        <EditText
+                            style="@style/AboutApplicationEditText"
+                            android:hint="@string/web"
+                            android:text="@string/web_value"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AboutAppLinearLayout"
+                    android:id="@+id/map"
+                    >
+
+                    <ImageView
+                        style="@style/AboutApplicationImageView"
+                        android:src="@drawable/ic_place_24dp"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AboutApplicationTextInputLayout"
+                        >
+
+                        <EditText
+                            style="@style/AboutApplicationEditText"
+                            android:hint="@string/address"
+                            android:text="@string/address_value"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AboutAppLinearLayout"
+                    android:id="@+id/description"
+                    >
+
+                    <ImageView
+                        style="@style/AboutApplicationImageView"
+                        android:src="@drawable/ic_factory_24dp"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AboutApplicationTextInputLayout"
+                        >
+
+                        <EditText
+                            style="@style/AboutApplicationEditText"
+                            android:hint="@string/about_company"
+                            android:text="@string/company_description"
+                            android:maxLines="5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AboutAppLinearLayout"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    >
+
+                    <ImageView
+                        style="@style/AboutApplicationImageView"
+                        android:src="@drawable/ic_android_24dp"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AboutApplicationTextInputLayout"
+                        >
+
+                        <EditText
+                            style="@style/AboutApplicationEditText"
+                            android:hint="@string/version_title"
+                            android:text="@string/version"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_mail_24dp"
+        app:layout_anchor="@id/view"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>
